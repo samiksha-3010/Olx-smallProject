@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Image Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .background-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay-image {
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            /* Adjust the top and left values as needed for positioning */
+            width: 20%; /* Adjust the width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://apollo.olx.in/v1/files/jmhoqexl09d11-IN/image;s=300x600;q=60" alt="Background Image" class="background-image">
+    <img src="https://apollo.olx.in/v1/files/jmhoqexl09d11-IN/image;s=300x600;q=60" alt="Overlay Image" class="overlay-image">
+</div>
+
+</body>
+</html>
+

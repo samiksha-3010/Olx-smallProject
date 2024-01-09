@@ -1,0 +1,114 @@
+*{
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+}
+
+.footer{
+      width: 80%;
+      height: 200px;
+      background-color:#ebeeef ;
+      display: flex;
+      justify-content: space-around;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.footer-first{
+      /* border: 2px solid red; */
+      width: 100%;
+      height: 300px;
+      background-color:#ebeeef ;
+}
+
+.first{
+      width:18%;
+      height: 200px;
+      margin-top: 20px;
+      
+}
+.first>p{
+      padding-right: 33%;
+      color: gray;
+ }
+
+.second{
+      width:18%;
+      height: 400px;
+      margin-top: 20px;
+      
+}
+.second>p{
+     padding-right: 33%;
+     color: gray;
+}
+.third{
+      width:18%;
+      height: 400px;
+      margin-top: 20px;
+      
+}
+.third>p{
+      padding-right: 33%;
+      color: gray;
+ }
+.fourth{
+      width:18%;
+      height: 400px;
+      margin-top: 20px;
+ padding-right: 20px;
+}
+
+.fourth>p{
+      padding-right: 33%;
+      color: gray;
+ }
+.five{
+      width:25%;
+      height: 400px;
+      margin-top: 20px;
+      justify-content: space-around;
+      
+}
+.classification{
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      width: 70px;
+      display: flex;
+      justify-content: space-around;
+
+}
+.google-store{
+      width: 100%;
+      height: 70px; 
+      margin-top: 20px;    
+}
+
+.google-store>img{
+      width: 70%;
+      height: 100px;     
+}
+
+.last-container{
+      width: 100%;
+      height: 70px;
+}
+
+.last-content{
+      border: 1px solid black;
+      width: 100%;
+      height: 60px;
+      margin-top: 20px;
+      background-color:#002f34 ;
+
+}
+.context{
+      display: flex;
+      justify-content: space-around;
+}
+
+.context>p{
+      color: white;
+      margin-top: 10px;
+}
