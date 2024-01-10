@@ -1,7 +1,7 @@
 
 import React, { useContext, useEffect, useState } from "react";
-// import '../Components/CSS Files/Login.css'
 import { toast } from "react-hot-toast";
+import './Style.css/Login.css'
 import { useNavigate } from 'react-router-dom';
 import AuthContext from "./Context/AuthContext";
 import axios from "axios";
@@ -48,8 +48,8 @@ const Login = () => {
 
 
   return (
-    <div id="logscreen">
-      <div id="logbody">
+    <div id="logscreen-my">
+      <div id="logbody-my">
        
         <div>
           <p>Log In to view your profile</p>

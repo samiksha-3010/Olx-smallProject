@@ -7,18 +7,20 @@ import Navbar from './Cmponenet/Navbar';
 import Register from './Cmponenet/Register';
 import Login from './Cmponenet/Login';
 import Footer from './Cmponenet/Footer';
+import AddProduct from './Cmponenet/AddProduct';
 
 
 function App() {
   return (
     <div className="App">
-              <Navbar/>
+              {/* <Navbar/> */}
 
       <Routes>
-      <Route exact path='/' element={<Home/>}/>
+      {/* <Route exact path='/' element={<Home/>}/> */}
       <Route exact path='Register' element={<Register/>}/>
       <Route exact path='login' element={<Login/>}/>
-      {/* <Route exact path='footer' element={<Footer/>}/> */}
+      <Route exact path='add-product' element={<AddProduct/>}/>
+
 
       </Routes>
       <Footer/>
