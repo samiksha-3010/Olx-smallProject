@@ -10,6 +10,7 @@
       display: flex;
       align-items: center;
       background-color:#eff1f3 ;
+      
      
 }
 .logo{
@@ -289,24 +290,72 @@ margin-top: 15px;
 
 }
 
-.button{
-      border: 1px solid rgb(235, 55, 55);
-      margin-left: auto;
-      margin-right: auto;
-      height: 200px;
-}
 
-.button button{
-      margin-top: 20px;
+button{
+      margin-top: 30px;
      
-      
 }
-.button button:hover{
+ button:hover{
       border: 3px solid black;
 }
-.image{
-      width: 70%;
-      border: 1px solid black;
-      height: 200px;
+
+.meedleSection{
+      /* border: 1px solid rgb(235, 55, 55); */
       margin-left: auto;
+      margin-right: auto;
+      height: 300px;
+      margin-top: 20px;
 }
+
+
+
+.inner-section{
+      width: 75%;
+      /* border: 1px solid black; */
+      margin-left: auto;
+      margin-right: auto;
+      height: 230px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+}
+.inner-section>div{
+width: 15%;
+/* border: 1px solid black; */
+border-radius: 10px;
+}
+.inner-section>div>img{
+      width: 100%;
+      border-radius: 10px;
+      height: 220px;
+
+      /* border: 1px solid black;    */
+}
+
+/* .last-section{
+      border: 1px solid black;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      background-color: #f7f8f9;
+}
+.image-section{
+      width: 30%;
+      border: 1px solid black;
+}
+.meedle{
+      width: 30%;
+      border: 1px solid black;   
+}
+.meedle-image{
+      width: 30%;
+      border: 1px solid black;
+
+} */
+
+
+
+
+
