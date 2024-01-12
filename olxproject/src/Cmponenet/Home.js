@@ -1,13 +1,15 @@
 import React from 'react'
 import './Style.css/Navbar.css'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const router = useNavigate();
   return (
     <div>
 
       
      <div className="sacond-nav">
-      <div className="cate"><b>ALL  CATEGORIES</b>
+      <div className="cate"  onClick={() => router('/add-product')}><b>ALL  CATEGORIES</b>
 
    
       

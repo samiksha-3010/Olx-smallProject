@@ -28,18 +28,17 @@ export const addProduct = async (req, res) => {
   }
   
   export const allProducts = async (req, res) => {
-      try {
-            const products = await ProductModal.find({});
-            // const products = await ProductModal.find({isBlocked:false,isVerified:"true"});
-            if (products.length) {
-              return res.status(200).json({ success: true, products: products });
-            }
-            return res
-              .status(404)
-              .json({ success: false, message: "No products found!" });
-          } catch (error) {
-            return res.status(500).json({ success: false, error: error.message });
-          }
+    try {
+        const products = await ProductModal.find({});
+        if (products.length) {
+          return res.status(200).json({ success: true, products: products });
+        }
+        return res
+          .status(404)
+          .json({ success: false, message: "No products found!" });
+      } catch (error) {
+        return res.status(500).json({ success: false, error: error.message });
+      }
   }
 
   export const getSingleProductData = async (req, res) => {

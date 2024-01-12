@@ -9,13 +9,13 @@ import { IoLocationOutline } from "react-icons/io5";
 const Navbar = () => {
   const {state, dispatch} = useContext(AuthContext);
   const router = useNavigate()
-  // document.getElementById('openPopupBtn').addEventListener('click', function() {
+
+  return (  // document.getElementById('openPopupBtn').addEventListener('click', function() {
   //   document.getElementById('popup').style.display = 'flex'
   // });
   // document.getElementById('closePopupBtn').addEventListener('click', function() {
   //   document.getElementById('popup').style.display = 'none'
   // });
-  return (
     <div>
 
 <header className='header'>
@@ -73,6 +73,9 @@ const Navbar = () => {
             </>:  <div  onClick={() => router('/login')} className='login' style={{ color:"black",textDecoration:"none",marginLeft:"20px",  }} id='logo-two'   ><u>Login </u></div>}
  <div className='sell'><b>  +  Sell  </b>
  </div>
+
+
+ 
 
 
      </header>

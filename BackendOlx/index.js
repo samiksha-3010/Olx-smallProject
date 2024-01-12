@@ -26,6 +26,11 @@ app.post('/add-product' ,checkSeller,addProduct)
 app.get('/all-products ',checkSeller,allProducts )
 app.post('/getSingle-ProductData',checkSeller,getSingleProductData  )
 
+app.post('/add-pro',(req,res) => {
+console.log(req.body)
+console.log(req.file)
+return
+})
 
 
 

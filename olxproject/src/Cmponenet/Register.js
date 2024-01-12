@@ -52,6 +52,14 @@ const Register = () => {
   return (
     <div id="logscreen">
       <div id="logbody">
+
+      <div className="top-level">
+      <img src="https://www.speedtest.pl/wiadomosci/wp-content/uploads/2020/05/OLX-logo-696x392.jpg"/>
+
+
+     </div>
+
+        
        
         <div>
           <p>Register to create profile</p>
@@ -106,15 +114,15 @@ const Register = () => {
           </form>
         </div>
         <div>
-      <span>Already have an account?</span>
-        <span onClick={()=>router('/login')}>Login</span>
+      <span  style={{paddingTop:"20px",color:"red", paddingRight:"15%"}} >Already have an account? <span onClick={()=>router('/login')}>Login</span>
+   </span>
       </div>
       
-      <div>
-        <p>By continuing, you agree to Meesho's</p>
-        <span>Terms and Conditions</span>
+      <div className="adjust-div">
+        <p  >All your personal details are safe with us</p>
+        <span>      If you continue, you are accepting OLX Terms </span>
         <span>and </span>
-        <span>Privacy Policy</span>
+        <span>Conditions and Privacy Policy</span>
       </div>
     </div>
         

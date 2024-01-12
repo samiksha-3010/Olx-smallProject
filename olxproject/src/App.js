@@ -8,6 +8,7 @@ import Register from './Cmponenet/Register';
 import Login from './Cmponenet/Login';
 import Footer from './Cmponenet/Footer';
 import AddProduct from './Cmponenet/AddProduct';
+import AddPro from './Cmponenet/AddPro';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <Route exact path='Register' element={<Register/>}/>
       <Route exact path='login' element={<Login/>}/>
       <Route exact path='add-product' element={<AddProduct/>}/>
+      <Route exact path='add-pro' element={<AddPro/>}/>
+
 
 
       </Routes>

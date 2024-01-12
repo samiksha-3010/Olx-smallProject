@@ -48,8 +48,13 @@ const Login = () => {
 
 
   return (
-    <div id="logscreen-my">
-      <div id="logbody-my">
+    <div id="logscreen">
+      <div id="logbody">
+     <div className="top-level">
+      <img src="https://www.speedtest.pl/wiadomosci/wp-content/uploads/2020/05/OLX-logo-696x392.jpg"/>
+
+
+     </div>
        
         <div>
           <p>Log In to view your profile</p>
@@ -80,16 +85,17 @@ const Login = () => {
           </form>
         </div>
         <div>
-      <span>Do not have an Account?</span>
-        <span onClick={()=>router('/register')}>Register</span>
+      <span  style={{paddingTop:"20px",color:"red", paddingRight:"15%"}}>Do not have an Account? <span onClick={()=>router('/register')}>Register</span>
+</span>
       </div>
       
-      <div>
-        <p>By continuing, you agree to Meesho's</p>
-        <span>Terms and Conditions</span>
+      <div className="adjust-div">
+        <p  >All your personal details are safe with us</p>
+        <span>      If you continue, you are accepting OLX Terms </span>
         <span>and </span>
-        <span>Privacy Policy</span>
+        <span>Conditions and Privacy Policy</span>
       </div>
+
     </div>
         
       </div>
