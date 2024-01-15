@@ -20,7 +20,7 @@ const Navbar = () => {
 
 <header className='header'>
        <div className='logo'>
-         <img src='https://logopng.com.br/logos/olx-104.png'/>
+         <img  onClick={() => router('/')} src='https://logopng.com.br/logos/olx-104.png'/>
        </div>
        <div className='input-box'>
          <img src='https://cdn-icons-png.flaticon.com/512/54/54481.png' alt='image' />
@@ -54,6 +54,10 @@ const Navbar = () => {
          </div>
        </div>
 
+      <p onClick={() => router('/add-product')}>Product +</p>
+       <p  onClick={() => router('/your-product')} >Your Product</p>
+       
+
  
        <div class="dropdown">
   <div class="dropbtn ">ENGLISH</div>
@@ -63,16 +67,27 @@ const Navbar = () => {
   </div>
 </div>
 
- 
+
+
+
+
+
+{/* {state?.user?.role == "Seller" &&<h4 onClick={() => router('/add-product')}>Add Product</h4>}
+{state?.user?.role == "Buyer" && <h4 onClick={() => router('/your-product')}>YourProduct</h4>} */}
+
+
+
   {state?.user?.name? <> 
 
-
-
-  <p onClick={() => router('/profile')}>{state.user.name}  </p>
-            <p onClick={() => dispatch({ type: "LOGOUT" })}>Logout</p>
-            </>:  <div  onClick={() => router('/login')} className='login' style={{ color:"black",textDecoration:"none",marginLeft:"20px",  }} id='logo-two'   ><u>Login </u></div>}
+  <p onClick={() => router('/profile')}>  </p>
+            <p onClick={() => dispatch({ type: "LOGOUT" })}    style={{ marginTop:"10px" }}>Logout</p>
+            </>:  <div  onClick={() => router('/login')} className='login' style={{ color:"black",textDecoration:"none",marginLeft:"20px",  }} id='logo-two'   ><u >Login</u></div>}
  <div className='sell'><b>  +  Sell  </b>
  </div>
+{/*  
+ {state?.user?.role == "Seller" &&<h4 onClick={() => router('/add-product')}>Add Product</h4>}
+ {state?.user?.role == "Seller" &&<h4 onClick={() => router('/add-product')}>Add Product</h4>} */}
+
 
 
  

@@ -9,7 +9,7 @@ const Home = () => {
 
       
      <div className="sacond-nav">
-      <div className="cate"  onClick={() => router('/add-product')}><b>ALL  CATEGORIES</b>
+      <div className="cate" ><b>ALL  CATEGORIES</b>
 
    
       

@@ -4,11 +4,11 @@ import jwt from "jsonwebtoken";
 
 export const addProduct = async (req, res) => {
       try {
-          const { name, price, image, category } = req.body;
+          const { name, price, image, category } = req.body.productData;
           const{token} = req.body
           if (!name || !price || !image || !category || !token) return res.status(404).json({success: false, message: "All fields are mandtory.." })
   
-          const decodedData = jwt.verify(token, process.env.JWT_SECRET);
+          const decodedData = jwt.verify(token, process.env.JWT_SECRET); 
           
   
           if (!decodedData) {
@@ -30,6 +30,7 @@ export const addProduct = async (req, res) => {
   export const allProducts = async (req, res) => {
     try {
         const products = await ProductModal.find({});
+        // const products = await ProductModal.find({isBlocked:false,isVerified:"true"});
         if (products.length) {
           return res.status(200).json({ success: true, products: products });
         }
@@ -38,7 +39,7 @@ export const addProduct = async (req, res) => {
           .json({ success: false, message: "No products found!" });
       } catch (error) {
         return res.status(500).json({ success: false, error: error.message });
-      }
+      }    
   }
 
   export const getSingleProductData = async (req, res) => {
@@ -56,3 +57,32 @@ export const addProduct = async (req, res) => {
             return res.status(500).json({ success: false, error: error.message })
         }
   }
+
+
+
+  export const getYourProducts = async (req, res) => {
+    try {
+        const { token } = req.body;
+
+        const decodedData = jwt.verify(token, process.env.JWT_SECRET)
+
+        if (!decodedData) {
+            return res.status(404).json({success: false, message: "Token not valid." })
+        }
+
+        const userId = decodedData?.userId;
+
+        const yourProducts = await ProductModal.find({userId})
+
+        // console.log(yourProducts,"yourProducts" )
+
+        if (yourProducts) {
+            return res.status(200).json({ success: true, products: yourProducts })
+        }
+
+        return res.status(404).json({ success: false,message: "No products found." })
+
+    } catch (error) {
+        return res.status(500).json({  success: false,  error: error.message })
+    }
+}

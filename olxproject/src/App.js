@@ -9,6 +9,9 @@ import Login from './Cmponenet/Login';
 import Footer from './Cmponenet/Footer';
 import AddProduct from './Cmponenet/AddProduct';
 import AddPro from './Cmponenet/AddPro';
+import AllProduct from './Cmponenet/AllProduct';
+import YourPro from './Cmponenet/YourPro';
+import SingleProduct from './Cmponenet/SingleProduct';
 
 
 function App() {
@@ -21,7 +24,13 @@ function App() {
       <Route exact path='Register' element={<Register/>}/>
       <Route exact path='login' element={<Login/>}/>
       <Route exact path='add-product' element={<AddProduct/>}/>
-      <Route exact path='add-pro' element={<AddPro/>}/>
+      <Route exact path='your-product' element={<YourPro/>}/>
+      <Route exact path='/singleproduct/:id' element={SingleProduct}/>
+
+
+      {/* <Route exact path='add-pro' element={<AddPro/>}/> */}
+      <Route exact path='all-product' element={<AllProduct/>}/>
+
 
 
 
