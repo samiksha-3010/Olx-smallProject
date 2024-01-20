@@ -26,14 +26,8 @@ function App() {
       <Route exact path='add-product' element={<AddProduct/>}/>
       <Route exact path='your-product' element={<YourPro/>}/>
       <Route exact path='/singleproduct/:id' element={SingleProduct}/>
-
-
       {/* <Route exact path='add-pro' element={<AddPro/>}/> */}
       <Route exact path='all-product' element={<AllProduct/>}/>
-
-
-
-
       </Routes>
       <Footer/>
     
